@@ -1,0 +1,6 @@
+.env
+go_web_boilerplate
+/node_modules/
+/tmp/
+static/styles/output.css
+package-lock.json

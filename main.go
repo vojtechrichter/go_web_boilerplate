@@ -1,7 +1,14 @@
 package main
 
-import "fmt"
+import "go_web_boilerplate/app"
+
+func che(err error) {
+    if err != nil {
+        app.LogError(err)
+    }
+}
 
 func main() {
-    fmt.Println("ahoj")
+    _, err := app.DbInterfaceInit("ahoj.db")
+    che(err)
 }
